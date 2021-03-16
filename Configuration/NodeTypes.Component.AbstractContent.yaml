@@ -1,0 +1,4 @@
+'NeosRulez.CodeBlock:Component.AbstractContent':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Content': true

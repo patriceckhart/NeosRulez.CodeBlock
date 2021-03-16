@@ -1,0 +1,38 @@
+'NeosRulez.CodeBlock:Content.CodeBlock':
+  superTypes:
+    'NeosRulez.CodeBlock:Component.AbstractContent': true
+  ui:
+    label: Code Block
+    group: neosrulezCodeBlock
+    icon: fas fa-terminal
+    inspector:
+      groups:
+        neosrulezCodeBlock:
+          label: Code Block
+          icon: fas fa-terminal
+  properties:
+    code:
+      type: string
+      ui:
+        label: Code
+        reloadIfChanged: true
+        inspector:
+          group: neosrulezCodeBlock
+          editor: Neos.Neos/Inspector/Editors/CodeEditor
+          buttonLabel: Edit code
+    theme:
+      type: string
+      defaultValue: 'dark'
+      ui:
+        label: Theme
+        inspector:
+          group: neosrulezCodeBlock
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              light:
+                label: Light
+                icon: fas fa-sun
+              dark:
+                label: Dark
+                icon: fas fa-moon

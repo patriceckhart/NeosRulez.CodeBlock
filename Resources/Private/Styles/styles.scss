@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+.code-block { -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; font-family: 'Source Code Pro', monospace;
+  &.theme-dark { background: rgba(0,0,0,0.8); }
+  &.theme-light { background: rgba(255,255,255,0.8); }
+  .code-block-titlebar { padding: 0.8rem; line-height:0; -webkit-border-radius: 8px 8px 1px 1px; -moz-border-radius: 8px 8px 1px 1px;
+    span { width:0.8rem; height:0.8rem; display:inline-block; border-radius:100%; background:#ed6a5e; margin-right:0.45rem;
+      &:nth-child(2) { background:#f4be4f; }
+      &:nth-child(3) { background:#60c654; }
+    }
+  }
+  &.theme-dark {
+    .code-block-titlebar { border-bottom: 1px solid rgba(0,0,0,0.25); }
+    .code-block-body { color:#FFF; }
+  }
+  &.theme-light {
+    .code-block-titlebar { border-bottom: 1px solid rgba(255,255,255,0.25); }
+    .code-block-body { color:#333; }
+  }
+  .code-block-body { padding: 0.8rem; }
+}

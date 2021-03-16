@@ -1,0 +1,26 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        NeosRulez.CodeBlock: true
+    nodeTypes:
+      groups:
+        neosrulezCodeBlock:
+          position: 'end'
+          label: NeosRulez.CodeBlock:Main:neosrulezCodeBlock
+    userInterface:
+      translation:
+        autoInclude:
+          NeosRulez.Bootstrap:
+            - Main
+            - 'NodeTypes/*'
+            - 'NodeTypes/Content/*'
+            - 'NodeTypes/Component/*'
+            - 'NodeTypes/Mixin/*'
+NeosRulez:
+  DynamicResources:
+    site:
+      resources:
+        head:
+          styles:
+            codeBlockCss: 'resource://NeosRulez.CodeBlock/Private/Styles/styles.scss'

@@ -1,0 +1,18 @@
+prototype(NeosRulez.CodeBlock:Component.CodeBlock) < prototype(Neos.Fusion:Component) {
+    code = ${this.code ? this.code : false}
+    theme = ${this.theme ? this.theme : false}
+    codeBlockClass = ${'code-block' + (this.theme ? ' theme-' + this.theme : false)}
+
+    renderer = afx`
+        <div @if.render={props.code} class={props.codeBlockClass} >
+            <div class="code-block-titlebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="code-block-body">
+                {String.htmlSpecialChars(props.code)}
+            </div>
+        </div>
+    `
+}

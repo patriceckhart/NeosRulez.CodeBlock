@@ -1,0 +1,10 @@
+prototype(NeosRulez.CodeBlock:Content.CodeBlock) < prototype(Neos.Neos:ContentComponent) {
+    code = ${node.properties.code}
+    theme = ${node.properties.theme}
+
+    renderer = afx`
+        <NeosRulez.CodeBlock:Component.AbstractContent>
+            <NeosRulez.CodeBlock:Component.CodeBlock code={props.code} theme={props.theme} />
+        </NeosRulez.CodeBlock:Component.AbstractContent>
+    `
+}
